@@ -82,3 +82,22 @@ li:active{
 ul, ol{
   list-style: none;
 }
+
+/* capitúlo 3.2 */
+
+div{
+  margin: 40px;
+}
+div:hover{
+  border-color: black;
+  border-style: solid;
+  padding: 3px;
+}
+
+div:first-of-type{
+  background-color: blue;
+}
+
+div:has:Secundária{
+  background-color: green;
+}
