@@ -1,0 +1,32 @@
+body{
+  font-size: 16px;
+}
+
+h1{
+  font-size: 65px;
+  font-family: sans-serif;
+  color: orange;
+}
+
+ul{
+  background-color: rgb(7, 202, 209);
+}
+
+.background{
+  background-color: plum;
+}
+
+p{
+  font-weight: 600;
+  font-size: 3em;
+}
+
+#yellow{
+  color: yellow;
+}
+#brown{
+  color: brown;
+}
+#red{
+  color: red;
+}
