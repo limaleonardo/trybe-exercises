@@ -35,8 +35,7 @@ article{
 }
 
 section{
-  max-width: 70vw;
-  
+  max-width: 65vw;
 }
 
 section img{
@@ -48,7 +47,5 @@ section img{
 aside{
   position: absolute;
   right: 20px;
-  top: 280px;;
-
-  
+  top: 160px;
 }
