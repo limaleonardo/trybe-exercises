@@ -65,7 +65,7 @@ footer{
   position:sticky;
   top: 100vh;
   width: 110vw;
-  background-color: hotpink;
+  background-color: rgb(6, 204, 211);
   text-align: center;
   padding: 5px;
 }
@@ -89,4 +89,8 @@ img{
   margin: auto;
   min-width: 300px;
   border-radius: 30px;
+}
+
+li{
+  text-align: justify;
 }
