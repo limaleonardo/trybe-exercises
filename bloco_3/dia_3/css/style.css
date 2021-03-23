@@ -1,0 +1,126 @@
+.caixa {
+  color: white;
+  display: inline-block;
+  line-height: 50px;
+  text-align: center;
+  vertical-align: top;
+}
+
+.width-and-height {
+  height: 50px;
+  width: 50px;
+}
+
+.padding {
+/* insira aqui um padding de 20px na classe abaixo para aplicá-lo aos itens B, C e D */
+padding: 20px;
+}
+
+.margin {
+/* insira aqui uma margem de 30px na classe abaixo para aplicá-la aos itens C e D */
+margin: 30px;
+}
+
+.border {
+/* insira aqui uma borda com valor '5px solid black' para aplicá-la ao item D */
+border: 5px solid black;
+
+}
+
+/* Chapter 2 */
+
+.super-mario{
+  position: absolute;
+  max-width: 200px;
+  
+}
+
+.baloon{
+  position: absolute;
+  max-width: 190px;
+  z-index: 4;
+  left: 340px;
+  top: 100px;
+
+}
+
+.bowser{
+  position: absolute;
+  max-width: 300px;
+  left: 500px;
+}
+
+.goomba{
+  position: absolute;
+  max-width: 150px;
+  left: 80px;
+  top: 350px;
+  z-index: 1;
+}
+
+.word{
+  position: absolute;
+  z-index: 5;
+  left: 350px;
+  top: 130px;
+}
+
+/* Chapter 3 */
+
+h1,p{
+  text-align: center;
+}
+
+li:hover{
+  background-color: cyan;
+}
+
+li:active{
+  color: red;
+}
+
+ul, ol{
+  list-style: none;
+}
+
+/* capitúlo 3.2 */
+
+div{
+  margin: 40px;
+}
+div:hover{
+  border-color: black;
+  border-style: solid;
+  padding: 3px;
+}
+
+body div:nth-child(3){
+  background-color: blue;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body div:nth-child(4){
+  background-color: green;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body div:nth-child(5){
+  background-color: rgb(128, 0, 90);
+  font-family: 'Times New Roman', Times, serif;
+  padding: 40px;
+}
+
+body div:nth-child(6){
+  background-color: rgb(138, 59, 6);
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body div:nth-child(7){
+  background-color: rgb(240, 105, 105);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body div:nth-child(2n+1){
+  font-style: italic;
+  color: aliceblue;
+}
