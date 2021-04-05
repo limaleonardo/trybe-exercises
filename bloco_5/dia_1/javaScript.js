@@ -15,3 +15,10 @@ function changeBackgroundColor(specificClass, color) {
 function tagToUppercase(tag, position) {
   document.getElementsByTagName(tag)[position].style.textTransform = 'uppercase';
 }
+
+//E06
+function printTag(tag) {
+  for (let index = 0; index < document.getElementsByTagName(tag).length; index += 1) {
+    console.log(document.getElementsByTagName(tag)[index].textContent);    
+  }
+}
