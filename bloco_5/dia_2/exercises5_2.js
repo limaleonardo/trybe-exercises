@@ -24,5 +24,10 @@ document.getElementById('main').appendChild(document.createElement('div')).id = 
 document.getElementById('left').className = 'left-content';
 
 //E06
+document.getElementById('main').appendChild(document.createElement('div')).id = 'right';
+
+document.getElementById('left').className = 'right-content';
+
+//E07
 
 
