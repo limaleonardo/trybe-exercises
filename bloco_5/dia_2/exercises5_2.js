@@ -19,5 +19,10 @@ document.getElementById('center').className = 'center-content';
 document.getElementById('center').appendChild(document.createElement('p')).innerText = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam inventore sed fugit consequatur, blanditiis perspiciatis iusto nulla, hic repellendus consectetur debitis esse dolorem at. Pariatur accusamus quidem deleniti aspernatur omnis.'
 
 //E05
+document.getElementById('main').appendChild(document.createElement('div')).id = 'left';
+
+document.getElementById('left').className = 'left-content';
+
+//E06
 
 
