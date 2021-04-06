@@ -29,5 +29,12 @@ document.getElementById('main').appendChild(document.createElement('div')).id = 
 document.getElementById('left').className = 'right-content';
 
 //E07
+document.getElementById('left').appendChild(document.createElement('img')).id = 'img';
+
+document.getElementById('img').className = 'small-image';
+
+document.getElementById('img').src = 'https://picsum.photos/200';
+
+//E08
 
 
