@@ -39,4 +39,10 @@ e11.appendChild(tag3);
 let e12 = document.getElementById('primeiroFilhoDoFilho').firstElementChild;
 console.log(e12.parentElement.parentElement.nextElementSibling);
 
-
+let e13 = document.getElementsByTagName('div');
+console.log (e13);
+for (let index = 0; index < e13.length; index += 1) {
+  if(e13[index].id !== 'pai' || e13[index].id !== 'elementoOndeVoceEsta' || e13[index].id !== 'primeiroFilhoDoFilho') {
+    document.body.removeChild(e13[index]);
+  }
+}
