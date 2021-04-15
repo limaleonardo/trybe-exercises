@@ -1,17 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Curricullum Forms</title>
-</head>
-<body>
-  
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Curricullum Forms</title>
+  </head>
+  <body>
+    <header>
+      <h1>We want you!</h1>
+      <p>To join our company today</p>
+    </header>
 
+    <form action="" method="get">
+      <fieldset>
+        <legend><h2>Pernonal Info:</h2></legend>
 
+        <div class="forms-line">
+          <label for="nome-completo">Nome Completo</label>
+          <input
+            type="text"
+            name="nome-completo"
+            id="fullName"
+            maxlength="40"
+            required
+            class="text-input"
+          />
+        </div>
 
-  <script src="script.js"></script>
-</body>
+        <div class="forms-line">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required maxlength="50" class="text-input"/>
+        </div>
+
+        <div class="forms-line">
+          <label for="cpf">CPF</label>
+          <input type="text" name="cpf" id="cpf" maxlength="11" required class="text-input"/>
+        </div>
+
+        <div class="forms-line">
+          <label for="adress">Endereço</label>
+          <input
+            type="text"
+            name="adress"
+            id="adress"
+            maxlength="200"
+            required
+            class="text-input"
+          />
+        </div>
+
+        <div class="forms-line">
+          <label for="city">Cidade</label>
+          <input type="text" name="city" id="city" maxlength="28" required class="text-input"/>
+        </div>
+
+        <div class="forms-line">
+          <label for="region">Estado</label>
+          <select name="region" id="region" required></select>
+        </div>
+
+        <div class="forms-line">
+         <input type="radio" name="housing" id="apartamento" required>
+         <label for="apartamento"> Apartamento</label>
+
+         <input type="radio" name="housing" id="casa" required>
+         <label for="casa">Casa</label>
+        </div>
+
+      </fieldset>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
 </html>
