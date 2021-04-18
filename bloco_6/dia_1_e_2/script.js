@@ -36,38 +36,40 @@ function createRegions() {
   }
 }
 
-function dateChecker() {
-  let inputDate = document.getElementById("start-date").value;
-  let date = inputDate.split("/");
-  let day = parseInt(date[0]);
-  let month = parseInt(date[1]);
-  let year = parseInt(date[2]);
+// function dateChecker() {
+//   let inputDate = document.getElementById("start-date").value;
+//   let date = inputDate.split("/");
+//   let day = parseInt(date[0]);
+//   let month = parseInt(date[1]);
+//   let year = parseInt(date[2]);
 
-  if (day < 0 || day > 31) {
-    window.alert("Dia Inválido!");
-    return;
-  }
+//   if (day < 0 || day > 31) {
+//     window.alert("Dia Inválido!");
+//     return;
+//   }
 
-  if (month < 0 || month > 12) {
-    window.alert("Mês Inválido!");
-    return;
-  }
+//   if (month < 0 || month > 12) {
+//     window.alert("Mês Inválido!");
+//     return;
+//   }
 
-  if (year < 0) {
-    window.alert("Ano Inválido!");
-    return;
-  }
+//   if (year < 0) {
+//     window.alert("Ano Inválido!");
+//     return;
+//   }
 
-  return true;
-}
+//   return true;
+// }
 
 function createResume() {
   const resumeForm = document.getElementById("resume-form");
   const inputData = new FormData(resumeForm);
   const resume = document.createElement("div");
   resume.id = "resume";
+  resume.className = "section";
   for (const [key, value] of inputData) {
     const singleField = document.createElement("p");
+    singleField.className = "container";
     singleField.innerText = `${key}: ${value}`;
     resume.appendChild(singleField);
   }
@@ -76,20 +78,20 @@ function createResume() {
 
 function resetAll() {
   const resume = document.getElementById("resume");
-  console.log(resume);
-  if (resume.innerHTML != "") {
-    resume.innerHTML = "";
+  if (resume != null) {
+    resume.remove();
   }
 }
 
 function formHandler(event) {
   event.preventDefault();
-  if (dateChecker() === true) {
-    document.body.appendChild(createResume());
-  }
+  resetAll();
+
+  document.body.appendChild(createResume());
 }
 
 createRegions();
 
 document.getElementById("submit").addEventListener("click", formHandler);
 document.getElementById("reset").addEventListener("click", resetAll);
+
