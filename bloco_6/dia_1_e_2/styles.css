@@ -1,0 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+
+.forms-line {
+  display: block;
+}
+
+.text-input{
+  width: 100%;
+}
